@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Form, FormControl, FormGroup, ControlLabel, Button } from 'react-bootstrap';
 
 import { API_KEY } from '../api-key';
+import { movies } from '../actions';
+import { connect } from 'react-redux';
 
 class Search extends Component{
     constructor(props){
@@ -46,4 +48,4 @@ class Search extends Component{
     }
 }
 
-export default Search;
+export default connect(null, { movies })(Search);
