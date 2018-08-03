@@ -5,8 +5,8 @@
   "dependencies": {
     "history": "^4.7.2",
     "hoek": "^5.0.3",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
