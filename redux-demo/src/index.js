@@ -5,16 +5,14 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import {createStore} from 'redux';
 
-import { incrementNumber } from './actions';
-import rootReducer from './reducers';
+import {increment} from './action/index';
+import {decrement} from './action/index';
+import rootReducer from './reducer/index';
 
 const store = createStore(rootReducer,
-	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-
-// store.subscribe(()=>console.log('store', store.getState()));
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
     <Provider store={store}>
