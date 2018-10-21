@@ -4,7 +4,7 @@ class AddTask extends Component {
     render(){
         return(
             <div>
-                <input type="text" />
+                <input type="text" />&nbsp;&nbsp;
                 <button>Add Task</button>
             </div>
         );
