@@ -1,14 +1,6 @@
 .header-title{
-    background-color: #dfdfdf;
+    background-color: #7391ba;
     padding: 3px;
     font-family: "Palatino Linotype", "Book Antiqua", serif;
 }
 
-div input{
-    width: 80%;
-    padding: 3px;
-}
-
-div button{
-    padding: 4px;
-}

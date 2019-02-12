@@ -1,10 +1,10 @@
 import React from 'react';
 import './ListItem.css';
 
-const ListItem = () => {
+const ListItem = (props) => {
     return(
         <div className="list-item">
-            <li></li>
+            <li>{props.item}</li>
         </div>
     )
 }
