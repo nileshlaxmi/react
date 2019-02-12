@@ -13,9 +13,12 @@ class App extends Component {
         <div className="App">
           <Header />
           <AddTask />
-          <ul>
-            <ListItem />
-          </ul>
+          <div className="list-div">
+            <ul>
+              <ListItem />
+            </ul>
+          </div>
+          
         </div>
       </div>
       

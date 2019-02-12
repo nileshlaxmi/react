@@ -1,8 +1,9 @@
 import React from 'react';
+import './ListItem.css';
 
 const ListItem = () => {
     return(
-        <div>
+        <div className="list-item">
             <li></li>
         </div>
     )
