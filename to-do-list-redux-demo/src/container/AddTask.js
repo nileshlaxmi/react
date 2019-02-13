@@ -16,33 +16,33 @@ class AddTask extends Component {
             task: e.target.value
         })
     }
+
     addTask = () => {
-        debugger
+        const {list, task} = this.state;
+
+        /**
+         * Need to ask why using push is not working, type of list is changing from object to number
+         */
+        // this.setState({
+        //     task: '',
+        //     list: list.push(task)
+        // })
+
         this.setState({
             task: '',
-            list: this.state.task
+            list: [...list, task]
         })
-        console.log("this.state.task", this.state.task);
     }
+
     render(){
-        const { list} = this.state;
+        const {list} = this.state;
+        console.log("typeof(list)", typeof list);
         return(
             <div className="add-task">
                 <input type="text" onChange={this.inputChange}/>
                 <button onClick={this.addTask}>Add Task</button>
                 <div className="list-div">
-                    {
-                        list && list.length > 0 ? 
-                            <ul>
-                                {
-                                    list.map((item, index) => {
-                                        return <ListItem key={index} item={item} />
-                                    })
-                                }
-                            </ul> 
-                            :
-                            null   
-                    }
+                    <ListItem list={list} />
                 </div>
             </div>
         );
