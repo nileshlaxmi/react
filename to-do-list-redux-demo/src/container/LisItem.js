@@ -2,7 +2,6 @@ import React from 'react';
 import './ListItem.css';
 
 const ListItem = (props) => {
-    debugger
     console.log("props", props);
     return(
         <div className="list-item">
