@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import AddTask from './container/AddTask';
+import AddTask from './container/AddTask/AddTask';
 
-import Header from './component/Header';
+import Header from './component/Header/Header';
 
 
 class App extends Component {
